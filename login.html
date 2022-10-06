@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="main">
+        <form action="login-submit.php" method="get">
+            <fieldset>
+                <legend> Returning User: </legend>
+                <strong class="column"> Username: <span>*</span></strong>
+                <input type="text" name="username" maxlength="20" required><br><br>
+    
+                <strong class="column"> Password: <span>*</span></strong>
+                <input type="text" name="password" maxlength="20" required><br><br>
+    
+                <div>
+                    <button type="submit" style="font-weight: bold;" >Log In</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <a href="signup.html">Don't have account yet?</a>
+</body>
+</html>
