@@ -1,0 +1,14 @@
+#button {
+    height: 50px;
+    width: 200px;
+}
+fieldset strong,
+ul strong,
+fieldset label.left,
+fieldset .column {
+	float: left;
+	width: 11em;
+}
+fieldset {
+    text-align: left;
+}

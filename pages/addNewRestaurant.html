@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Place</title>
+    <link href="../css/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend> Add New Restaurant: </legend>
+            <strong class="column"> Restaurant Name: <span>*</span></strong>
+            <input type="text" name="name" maxlength="40" required><br><br>
+
+            <strong class="column"> Address: <span>*</span></strong>
+            <input type="text" name="address" maxlength="50" required><br><br>
+
+            <strong class="column"> City: <span>*</span></strong>
+            <input type="text" name="city" maxlength="50" required><br><br>
+
+            <strong class="column"> Phone Number: <span>*</span></strong>
+            <input type="text" name="phone" maxlength="10" required><br><br>
+
+            <strong class="column"> This restaurant has: <span>*</span></strong>
+            <select name="type" id="type">
+                <option value="drink">Coffee</option>
+                <option value="food">Boba tea</option>
+                <option value="groceries">Sandwich</option>
+                <option value="drugstore">Mexican Food</option>
+                <option value="drugstore">Vietnamese Food</option>
+                <option value="drugstore">Korean Food</option>
+                <option value="drugstore">Pizza</option>
+            </select><br><br>
+
+            <strong class="column"> Description: <span>*</span></strong><br>
+            <textarea id="data_8" false name="data_8" style="width:60%;" rows="9" class="form-control" required></textarea><br><br>
+
+            <strong class="column"> Offer GSU student discount? <span>*</span></strong>
+            <span><input type="radio" id="" name="" value="Yes"/> Yes</span>
+			<span><input type="radio" id="" name="" value="No"/> No</span><br/><br>
+
+            <div>
+                <button type="submit" style="font-weight: bold;" >Add Place</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
+

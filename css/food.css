@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+
+button,
+nav {
+    border: none;
+    background-color: #eab103;
+    position: relative;
+    opacity: 0.9;
+}
+
+a {
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+button:hover,
+a:hover {
+    text-decoration: none;
+    background-color: black;
+    color: #eab103;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-item {
+
+    padding-top: 5px;
+    cursor: pointer;
+
+}
+
+
+
+
+/* Style tab links */
+.tablink {
+    color: black;
+    float: left;
+    cursor: pointer;
+    padding: 14px 10px;
+
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    display: none;
+
+}
+
+
+.bg-img {
+    /* The image used */
+    background-image: url("../images/foody.jpg");
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 7px;
+}
+
+.category-tree .category {
+    display: inline;
+    float: left;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    padding-right: 15px;
+    width: 30%;
+}
