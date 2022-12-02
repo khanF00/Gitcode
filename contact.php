@@ -20,8 +20,9 @@ if (mysqli_connect_error()) {
 	die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
 } else {
 	$SELECT = "SELECT data_2 From register Where data_2 = ? Limit 1";
+	//table = register 
 	$INSERT ="INSERT Into register (username,restuarant, rating, title,pros,cons,review,recommend) values(?,?,?,?,?,?,?,?)";
-
+	// prepare statement 
 	$stmt= $conn-> prepare($SELECT);
 	$stmt->bind_param("s", $username);
 	$stmt->execute();
