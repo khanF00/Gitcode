@@ -75,5 +75,53 @@ input:checked + label:before,
 
 }
 
+}
+nav{
+  position: fixed;
+  background: #FFA500;
+  width: 100%;
+  padding: 8px 0;
+  z-index: 12;
+  
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: #000;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 55px;
+}
+.menu ul li:first-child{
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-align: center;
+  justify-content: center;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+
 
 
