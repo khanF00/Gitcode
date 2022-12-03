@@ -12,10 +12,7 @@
 			<ul>
 				<img src="gsulogo.png" width="50px" height="50px">
 				<li>
-					<a href="login.html">LOGIN</a>
-				</li>
-				<li>
-					<a href="signup.html">SIGNUP</a>
+					<a href="login.html">LOGIN/Register</a>
 				</li>
 				<li>
 					<a href="addNewRestaurant.html">ADD RESTUARANT</a>
@@ -29,59 +26,59 @@
 			</ul>
 		</div>
 	</nav>
-	<form name="frmReview" method="post" action="contact.php" onSubmit="return validateForm();">
+	<form  method="POST" action="contact.php" onSubmit="return validateForm();">
 		<div style="max-width: 400px;">
 		</div>
 		<h4 style=" 30px;font-size : 40px;">Add a Review ! </h4>
 
 		<div style="padding-bottom: 18px;">Display Name<span style="color: red;"> *</span><br/>
-		<input type="text" id="data_2" name="data_2" style="max-width : 450px;" class="form-control"/>
+		<input type="text"  name="username" style="max-width : 450px;" />
 		</div>
 		<div style="padding-bottom: 18px;" align=center >Which restuarant would you like to rate?<br/>
-			<select id="data_3" name="data_3" style="max-width : 450px;" class="form-control" >
-				<option>Chic Fil a</option>
-				<option>Panda Express</option>
-				<option>Pizza Hut </option>
-				<option>Dunkin Donut</option>
-				<option>StarBucks</option>
+			<select  name="restuarant" style="max-width : 450px;" >
+				<option value="chic">Chic Fil a</option>
+				<option value="panda">Panda Express</option>
+				<option value="pizza">Pizza Hut </option>
+				<option value="dunkin">Dunkin Donut</option>
+				<option value="starbucks">StarBucks</option>
 			</select>
 		</div>
 		<br/>
 		<br/>
 		<div style="padding-bottom: 18px;">Rate this Restuarant Overall<span style="color: red;"> *</span><br/>
-			<select id="data_4" name="data_4" style="max-width : 150px;" class="form-control">
-				<option>Very Good</option>
-				<option>Good</option>
-				<option>Ok</option>
-				<option>Poor</option>
-				<option>Very Poor</option>
+			<select name="rating" style="max-width : 150px;" >
+				<option value="verygood">Very Good</option>
+				<option value="good">Good</option>
+				<option value="ok">Ok</option>
+				<option value="poor">Poor</option>
+				<option value="verypoor">Very Poor</option>
 			</select>
 		</div>
 		<br/>
 		<br/>
 		<div style="padding-bottom: 18px;">Title<span style="color: red;"> *</span><br/>
-			<input type="text" id="data_5" name="data_5" style="max-width : 450px;" class="form-control"/>
+			<input type="text" name="title" style="max-width : 450px;" />
 		</div>
 		<div style="padding-bottom: 18px;">Pros<br/>
-			<textarea id="data_6" false name="data_6" style="max-width : 450px;" rows="3" class="form-control"></textarea>
+			<textarea  false name="pros" style="max-width : 450px;" rows="3" ></textarea>
 		</div>
 		<div style="padding-bottom: 18px;">Cons<br/>
-			<textarea id="data_7" false name="data_7" style="max-width : 450px;" rows="3" class="form-control"></textarea>
+			<textarea  name="cons" style="max-width : 450px;" rows="3" ></textarea>
 		</div>
 		<div style="padding-bottom: 18px;">Review<span style="color: red;"> *</span><br/>
-			<textarea id="data_8" false name="data_8" style="max-width : 450px;" rows="9" class="form-control"></textarea>
+			<textarea false name="review" style="max-width : 450px;" rows="9" ></textarea>
 		</div>
 		<div style="padding-bottom: 18px;">Would you recommend this Restuarant?<br/>
-			<select id="data_9" name="data_9" style="max-width : 450px;" class="form-control" >
-				<option>Yes</option>
-				<option>No</option>
-				<option>I am not sure</option>
+			<select name="recommend" style="max-width : 450px;"  >
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+				<option value="Not sure">I am not sure</option>
 			</select>
 		</div>
 			</br>
 	<br>
 	<br>
-		<div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+		<div style="padding-bottom: 18px;"><input name="submit" value="Submit" type="submit"/></div>
 		<div>
 
 			
