@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AddReview.css">
+  </head>
+	<body>
+	<nav>
+		<div class="menu">
+			<div class="logo"> </div>
+			<ul>
+				<img src="gsulogo.png" width="50px" height="50px">
+				<li>
+					<a href="login.html">LOGIN/Register</a>
+				</li>
+				<li>
+					<a href="addNewRestaurant.html">ADD RESTUARANT</a>
+				</li>
+				<li>
+					<a href="showDetails.html">SHOW DETAILS</a>
+				</li>
+				<li>
+					<a href="AddReview.html">Add Review</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<form  method="POST" action="contact.php" onSubmit="return validateForm();">
+		<div style="max-width: 400px;">
+		</div>
+		<h4 style=" 30px;font-size : 40px;">Add a Review ! </h4>
+
+		<div style="padding-bottom: 18px;">Display Name<span style="color: red;"> *</span><br/>
+		<input type="text"  name="username" style="max-width : 450px;" />
+		</div>
+		<div style="padding-bottom: 18px;" align=center >Which restuarant would you like to rate?<br/>
+			<select  name="restuarant" style="max-width : 450px;" >
+				<option value="chic">Chic Fil a</option>
+				<option value="panda">Panda Express</option>
+				<option value="pizza">Pizza Hut </option>
+				<option value="dunkin">Dunkin Donut</option>
+				<option value="starbucks">StarBucks</option>
+			</select>
+		</div>
+		<br/>
+		<br/>
+		<div style="padding-bottom: 18px;">Rate this Restuarant Overall<span style="color: red;"> *</span><br/>
+			<select name="rating" style="max-width : 150px;" >
+				<option value="verygood">Very Good</option>
+				<option value="good">Good</option>
+				<option value="ok">Ok</option>
+				<option value="poor">Poor</option>
+				<option value="verypoor">Very Poor</option>
+			</select>
+		</div>
+		<br/>
+		<br/>
+		<div style="padding-bottom: 18px;">Title<span style="color: red;"> *</span><br/>
+			<input type="text" name="title" style="max-width : 450px;" />
+		</div>
+		<div style="padding-bottom: 18px;">Pros<br/>
+			<textarea  false name="pros" style="max-width : 450px;" rows="3" ></textarea>
+		</div>
+		<div style="padding-bottom: 18px;">Cons<br/>
+			<textarea  name="cons" style="max-width : 450px;" rows="3" ></textarea>
+		</div>
+		<div style="padding-bottom: 18px;">Review<span style="color: red;"> *</span><br/>
+			<textarea false name="review" style="max-width : 450px;" rows="9" ></textarea>
+		</div>
+		<div style="padding-bottom: 18px;">Would you recommend this Restuarant?<br/>
+			<select name="recommend" style="max-width : 450px;"  >
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+				<option value="Not sure">I am not sure</option>
+			</select>
+		</div>
+			</br>
+	<br>
+	<br>
+		<div style="padding-bottom: 18px;"><input name="submit" value="Submit" type="submit"/></div>
+		<div>
+
+			
+
+		</div>
+	</form>
+	</form>
+
+<script type="text/javascript">
+function validateForm() {
+if (isEmpty(document.getElementById('data_2').value.trim())) {
+alert('Reviewer is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_5').value.trim())) {
+alert('Title is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_8').value.trim())) {
+alert('Review is required!');
+return false;
+}
+return true;
+}
+function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+function validateEmail(email) {
+var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+return isEmpty(email) || re.test(email);
+}
+</script>
+
+	</body>
+</html>
+
