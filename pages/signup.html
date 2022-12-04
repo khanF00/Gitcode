@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/styles.css" type="text/css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+    <form action="signup-submit.php" method="post"> 
+        <fieldset>
+            <legend>SIGN UP<br></legend>
+
+            <strong class="column">Email: <span>*</span></strong>
+			<input name="email" type="text" size="30" required><br><br> 
+
+			<strong class="column">Name: <span>*</span></strong>
+			<input name="name" type="text" size="30" required><br><br> 
+
+            <strong class="column" >Username: <span>*</span></strong>
+			<input name="username" type="text" size="30" required><br><br> 
+
+            <strong class="column" >Password: <span>*</span></strong>
+			<input name="password" type="text" size="30" required><br><br> 
+				
+            <strong class="column">Gender:</strong>
+			<input type="radio" name="gender" value="M">Male
+            <input type="radio" name="gender" value="F" checked>Female<br><br>
+
+            <strong class="column">Age:</strong>
+            <input type="text" name="age" size="6" maxlength="2"><br><br>
+			
+            <div>
+				<button type="submit" style="font-weight: bold;" >Sign Up</button>
+			</div>
+        </fieldset>
+	</form>
+    <br>
+    Already have a GSU Foody Account? <a href="login.html"> Login</a>
+</body>
+</html>
