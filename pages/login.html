@@ -4,60 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account</title>
+    <title>Document</title>
     <link href="../css/styles.css" type="text/css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class = "hero">
-        <div>
-            <button class="back-btn" onclick="back()"><i class="fa fa-arrow-circle-left"></i> Back to Homepage</button>
-        </div>
-        <div class="form-box">
-            <div class="button-box">
-                <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-                <button type="button" class="toggle-btn" onclick="register()">Register</button>
-            </div> 
-
-            <form id="login" action="" class="input-group">
-                <input type="text" name="" class="input-field" placeholder="User ID" required>
-                <input type="text" name="" class="input-field" placeholder="Password" required>
-                <input type="checkbox" name="" class="checkbox"><span>Remember Password</span>
-                <button type="submit" class="submit-btn">Log In</button>
-            </form>
-
-            <form id="register" action="" class="input-group">
-                <input type="text" name="" class="input-field" placeholder="Full Name" required>
-                <input type="text" name="" class="input-field" placeholder="PantherID" required>
-                <input type="text" name="" class="input-field" placeholder="GSU Email" required>
-                <input type="text" name="" class="input-field" placeholder="User ID" required>
-                <input type="text" name="" class="input-field" placeholder="Password" required>
-                <input type="checkbox" name="" class="checkbox"><span>I agree to the terms & conditions</span>
-                <button type="submit" class="submit-btn">Register</button>
-            </form>
-        </div>
-
+    <div class="main">
+        <form action="login-submit.php" method="get">
+            <fieldset>
+                <legend> Returning User: </legend>
+                <strong class="column"> Username: <span>*</span></strong>
+                <input type="text" name="username" maxlength="20" required><br><br>
+    
+                <strong class="column"> Password: <span>*</span></strong>
+                <input type="text" name="password" maxlength="20" required><br><br>
+    
+                <div>
+                    <button type="submit" style="font-weight: bold;" >Log In</button>
+                </div>
+            </fieldset>
+        </form>
     </div>
-
-    <script>
-        var x = document.getElementById("login");
-        var y = document.getElementById("register");
-        var z = document.getElementById("btn");
-
-        function register() {
-            x.style.left = "-400px";
-            y.style.left = "50px";
-            z.style.left = "110px";
-        }
-        function login() {
-            x.style.left = "50px";
-            y.style.left = "450px";
-            z.style.left = "0";
-        }
-        function back() {
-            location.href = "../index.html";
-        }
-    </script>
+    <a href="signup.html">Don't have account yet?</a>
 </body>
 </html>
