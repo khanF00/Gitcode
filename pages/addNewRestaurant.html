@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add New Place</title>
-    <link href="../css/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/styles.css" type="text/css" rel="stylesheet" />
 </head>
+
 <body>
-    <form action="" method="post">
-        <fieldset>
-            <legend> Add New Restaurant: </legend>
-            <strong class="column"> Restaurant Name: <span>*</span></strong>
-            <input type="text" name="name" maxlength="40" required><br><br>
+    <div class="add-new-theme">
+        <div>
+            <button class="back-btn" onclick="back()"><i class="fa fa-arrow-circle-left"></i> Back to Homepage</button>
+        </div>
+        <!-- <div class="add-new-form-box"> -->
 
-            <strong class="column"> Address: <span>*</span></strong>
-            <input type="text" name="address" maxlength="50" required><br><br>
+        <form action="" class="add-new-form-box">
+            <div class="row">
+                <div class="column">
+                    <label for="" class="form-label">Restaurant Name</label>
+                    <input type="text" name="" class="add-new-input-field" placeholder="" required>
+                    <label for="" class="form-label">Address</label>
+                    <input type="text" name="" class="add-new-input-field" placeholder="" required>
+                    <label for="" class="form-label">City</label>
+                    <input type="text" name="" class="add-new-input-field" placeholder="" required>
+                    <label for="" class="form-label">State</label>
+                    <input type="text" name="" class="add-new-input-field" placeholder="" required>
+                    <label for="" class="form-label">Country</label>
+                    <input type="text" name="" class="add-new-input-field" placeholder="" required>
+                    <label for="" class="form-label">Phone Number</label>
+                    <input type="text" name="" class="add-new-input-field" placeholder="" required>
+                </div>
+                <div class="column">
+                    <label for="" class="form-label">This restaurant has</label>
+                    <input type="text" name="" class="add-new-input-field" placeholder="" required>
+                    <label for="" class="form-label">Description</label>
+                    <textarea name="" class="add-new-input-field" id="" cols="30" rows="6" type="text"></textarea>
+                    <label for="" class="form-label">Offer GSU student discount?</label>
 
-            <strong class="column"> City: <span>*</span></strong>
-            <input type="text" name="city" maxlength="50" required><br><br>
+                    <label class="switch">
+                        <input type="checkbox" id="switch-input">
+                        <span class="slider round"></span>
+                    </label><br><br>
 
-            <strong class="column"> Phone Number: <span>*</span></strong>
-            <input type="text" name="phone" maxlength="10" required><br><br>
+                    <label for="" id="photo-upload" class="form-label">Wanna share some awesome photos?</label>
+                    <input type="file" id="photo" name="photo" accept="image/png, image/jpeg"><br><br><br><br>
 
-            <strong class="column"> This restaurant has: <span>*</span></strong>
-            <select name="type" id="type">
-                <option value="drink">Coffee</option>
-                <option value="food">Boba tea</option>
-                <option value="groceries">Sandwich</option>
-                <option value="drugstore">Mexican Food</option>
-                <option value="drugstore">Vietnamese Food</option>
-                <option value="drugstore">Korean Food</option>
-                <option value="drugstore">Pizza</option>
-            </select><br><br>
-
-            <strong class="column"> Description: <span>*</span></strong><br>
-            <textarea id="data_8" false name="data_8" style="width:60%;" rows="9" class="form-control" required></textarea><br><br>
-
-            <strong class="column"> Offer GSU student discount? <span>*</span></strong>
-            <span><input type="radio" id="" name="" value="Yes"/> Yes</span>
-			<span><input type="radio" id="" name="" value="No"/> No</span><br/><br>
-
-            <div>
-                <button type="submit" style="font-weight: bold;" >Add Place</button>
+                    <button type="submit" class="submit-btn">Create New</button>
+                </div>
             </div>
-        </fieldset>
-    </form>
-</body>
-</html>
+        </form>
+        <!-- </div> -->
 
+    </div>
+    <script>
+        function back() {
+            location.href = "../index.html";
+        }
+    </script>
+</body>
+
+</html>
